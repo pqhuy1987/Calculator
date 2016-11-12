@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     
     var brain = CalculatorBrain()
     
-    @IBAction func appendDigit(sender: UIButton) {
+    @IBAction func appendDigit(_ sender: UIButton) {
         let digit = sender.currentTitle!
         if userIsInTheMiddleOfTypingANumber {
             display.text = display.text! + digit
@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func appendPoint(sender: UIButton) {
+    @IBAction func appendPoint(_ sender: UIButton) {
         if userIsInTheMiddleOfTypingANumber {
             if !userHasTypedAPoint {
                 userHasTypedAPoint = true
@@ -48,7 +48,7 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func appendPI(sender: UIButton) {
+    @IBAction func appendPI(_ sender: UIButton) {
         if userIsInTheMiddleOfTypingANumber {
             enter()
         }
@@ -65,7 +65,7 @@ class ViewController: UIViewController {
         history.text = history.text! + " " + String(displayValue)
     }
     
-    @IBAction func operate(sender: UIButton) {
+    @IBAction func operate(_ sender: UIButton) {
         if userIsInTheMiddleOfTypingANumber {
             enter()
         }
@@ -81,7 +81,7 @@ class ViewController: UIViewController {
     
     var displayValue: Double {
         get {
-            return NSNumberFormatter().numberFromString(display.text!)!.doubleValue
+            return NumberFormatter().number(from: display.text!)!.doubleValue
         }
         set {
             display.text = "\(newValue)"

@@ -13,7 +13,7 @@
 		CEF205E61BBE6B8E00954481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF205E51BBE6B8E00954481 /* Assets.xcassets */; };
 		CEF205E91BBE6B8E00954481 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF205E71BBE6B8E00954481 /* LaunchScreen.storyboard */; };
 		CEF205F41BBE6B8E00954481 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF205F31BBE6B8E00954481 /* CalculatorTests.swift */; };
-		CEF205FF1BBE7F7400954481 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF205FE1BBE7F7400954481 /* CalculatorBrain.swift */; settings = {ASSET_TAGS = (); }; };
+		CEF205FF1BBE7F7400954481 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF205FE1BBE7F7400954481 /* CalculatorBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,9 +147,12 @@
 				TargetAttributes = {
 					CEF205DA1BBE6B8E00954481 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = JQNK74493B;
+						LastSwiftMigration = 0810;
 					};
 					CEF205EE1BBE6B8E00954481 = {
 						CreatedOnToolsVersion = 7.0.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = CEF205DA1BBE6B8E00954481;
 					};
 				};
@@ -329,10 +332,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JQNK74493B;
 				INFOPLIST_FILE = Calculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -340,10 +346,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JQNK74493B;
 				INFOPLIST_FILE = Calculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -355,6 +364,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.CalculatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calculator.app/Calculator";
 			};
 			name = Debug;
@@ -367,6 +377,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.CalculatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calculator.app/Calculator";
 			};
 			name = Release;
