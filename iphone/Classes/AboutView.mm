@@ -34,8 +34,8 @@
 }
 
 - (void) awakeFromNib {
-    [versionLabel setText:[NSString stringWithFormat:@"Free42 %s", [Free42AppDelegate getVersion]]];
-    [copyrightLabel setText:@"© 2004-2016 Thomas Okken"];
+    [versionLabel setText:[NSString stringWithFormat:@"HP-42S Calculator %s", [Free42AppDelegate getVersion]]];
+    [copyrightLabel setText:@"© TwokingStudio"];
 }
 
 - (void)drawRect:(CGRect)rect {

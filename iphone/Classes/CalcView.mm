@@ -164,7 +164,7 @@ static CalcView *calcView = nil;
     UIActionSheet *menu =
     [[UIActionSheet alloc] initWithTitle:@"Main Menu"
                                 delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil
-                       otherButtonTitles:@"Show Print-Out", @"Program Import & Export", @"Preferences", @"Select Skin", @"Copy", @"Paste", @"About Free42", nil];
+                       otherButtonTitles:@"Show Print-Out", @"Program Import & Export", @"Preferences", @"Select Skin", @"Copy", @"Paste", @"About HP-42S Calculator", nil];
     
     [menu showInView:self];
     [menu release];
