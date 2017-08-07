@@ -1,3 +1,0 @@
-Free, open-source calculator for the iPad that has no ads!
-
-Feel free to contribute at github.com/kwonye/calcupad
