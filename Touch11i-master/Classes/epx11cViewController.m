@@ -9,6 +9,7 @@
 
 #include <SDCAlertView/SDCAlertView.h>
 #import "epx11cViewController.h"
+@import GoogleMobileAds;
 
 @implementation epx11cViewController {
     NSString *savemem_mem;
@@ -170,6 +171,14 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.bannerView.adUnitID = @"ca-app-pub-5722562744549789/4221694555";
+    self.bannerView.rootViewController = self;
+    [self.bannerView loadRequest:[GADRequest request]];
+    
+    self.bannerView2.adUnitID = @"ca-app-pub-5722562744549789/4221694555";
+    self.bannerView2.rootViewController = self;
+    [self.bannerView2 loadRequest:[GADRequest request]];
     
     if (UI_USER_INTERFACE_IDIOM() != UIUserInterfaceIdiomPad) {
         html.scrollView.scrollEnabled = NO;
@@ -598,6 +607,14 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 - (void)dealloc {
     NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
     [center removeObserver:self];
+}
+- (IBAction)ClosedAds:(id)sender {
+    [self.Xbutton setHidden:YES];
+    self.bannerView.hidden = true;
+}
+- (IBAction)ClosedAds2:(id)sender {
+    [self.Xbutton2 setHidden:YES];
+    self.bannerView2.hidden = true;
 }
 
 @end

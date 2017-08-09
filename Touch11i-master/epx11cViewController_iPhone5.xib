@@ -11,6 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="epx11cViewController">
             <connections>
+                <outlet property="Xbutton" destination="vR4-H0-aQM" id="7V2-tw-rBK"/>
+                <outlet property="Xbutton2" destination="SNB-g4-oG0" id="4qv-pU-jYm"/>
+                <outlet property="bannerView" destination="NeM-GS-3Jo" id="1r4-j8-aDH"/>
+                <outlet property="bannerView2" destination="xQ5-jV-p1d" id="gf6-tg-bbz"/>
                 <outlet property="html" destination="15" id="31"/>
                 <outlet property="view" destination="6" id="30"/>
             </connections>
@@ -33,27 +37,45 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="29"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                     <segments>
-                        <segment title="First"/>
-                        <segment title="Second"/>
+                        <segment title="Remove Ads Forever"/>
+                        <segment title="Restore"/>
                     </segments>
-                    <color key="tintColor" red="0.99158734083175659" green="0.97290033102035522" blue="0.96799272298812866" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" red="0.99990516901016235" green="1" blue="0.99987047910690308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </segmentedControl>
-                <view contentMode="scaleToFill" misplaced="YES" id="NeM-GS-3Jo">
+                <view contentMode="scaleToFill" misplaced="YES" id="NeM-GS-3Jo" customClass="GADBannerView">
                     <rect key="frame" x="0.0" y="30" width="414" height="50"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vR4-H0-aQM">
-                            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.99990516901016235" green="1" blue="0.99987047910690308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" title="X">
-                                <color key="titleColor" red="0.028046736493706703" green="0.039245415478944778" blue="0.017931105569005013" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="titleShadowColor" red="0.039858795702457428" green="0.051004000008106232" blue="0.029608683660626411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </state>
-                        </button>
-                    </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vR4-H0-aQM">
+                    <rect key="frame" x="0.0" y="80" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.99990516901016235" green="1" blue="0.99987047910690308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="X">
+                        <color key="titleColor" red="0.028046736493706703" green="0.039245415478944778" blue="0.017931105569005013" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.039858795702457428" green="0.051004000008106232" blue="0.029608683660626411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="ClosedAds:" destination="-1" eventType="touchDown" id="k5X-Qm-hMB"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" misplaced="YES" id="xQ5-jV-p1d" userLabel="Banner View 2" customClass="GADBannerView">
+                    <rect key="frame" x="0.0" y="686" width="414" height="50"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SNB-g4-oG0" userLabel="XButton 2">
+                    <rect key="frame" x="0.0" y="656" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" red="0.99990516900000004" green="1" blue="0.99987047910000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="X">
+                        <color key="titleColor" red="0.028046736490000002" green="0.039245415479999997" blue="0.017931105570000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.039858795699999998" green="0.051004000010000002" blue="0.029608683659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="ClosedAds2:" destination="-1" eventType="touchDown" id="dRt-nw-TFa"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.22282608700000001" green="0.22282608700000001" blue="0.22282608700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <point key="canvasLocation" x="26" y="51"/>

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import <AudioToolbox/AudioToolbox.h>
+@import GoogleMobileAds;
 
 @interface epx11cViewController : UIViewController <UIWebViewDelegate,UIPickerViewDataSource, UIPickerViewDelegate> {
     SystemSoundID audio_id;
@@ -25,6 +26,11 @@
     BOOL iphone5;
     NSMutableDictionary *memories;
 }
+
+@property (weak, nonatomic) IBOutlet GADBannerView *bannerView;
+@property (weak, nonatomic) IBOutlet GADBannerView *bannerView2;
+@property (weak, nonatomic) IBOutlet UIButton *Xbutton;
+@property (weak, nonatomic) IBOutlet UIButton *Xbutton2;
 
 - (void) playClick;
 - (BOOL) webView:(UIWebView *)view shouldStartLoadWithRequest:(NSURLRequest *)request 
