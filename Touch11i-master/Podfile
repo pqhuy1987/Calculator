@@ -3,8 +3,6 @@ platform :ios, '10.0'
 
 target 'epx11c' do
 	pod 'SDCAlertView'
-    	pod ‘Firebase/Core’
-    	pod ‘Firebase/AdMob’
-    	pod 'Firebase/Core'
+    	pod 'Google-Mobile-Ads-SDK'
 end
 
