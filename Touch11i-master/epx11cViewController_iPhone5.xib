@@ -16,6 +16,7 @@
                 <outlet property="bannerView" destination="NeM-GS-3Jo" id="1r4-j8-aDH"/>
                 <outlet property="bannerView2" destination="xQ5-jV-p1d" id="gf6-tg-bbz"/>
                 <outlet property="html" destination="15" id="31"/>
+                <outlet property="segmentTab" destination="dYn-e2-1ry" id="V5l-qh-9M1"/>
                 <outlet property="view" destination="6" id="30"/>
             </connections>
         </placeholder>
@@ -41,6 +42,9 @@
                         <segment title="Restore"/>
                     </segments>
                     <color key="tintColor" red="0.99990516901016235" green="1" blue="0.99987047910690308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="OnChangeTouch:" destination="-1" eventType="valueChanged" id="R9A-5O-kBN"/>
+                    </connections>
                 </segmentedControl>
                 <view contentMode="scaleToFill" misplaced="YES" id="NeM-GS-3Jo" customClass="GADBannerView">
                     <rect key="frame" x="0.0" y="30" width="414" height="50"/>

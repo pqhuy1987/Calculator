@@ -36,7 +36,18 @@
     self.window.rootViewController = self.viewController;
     application.statusBarStyle = UIStatusBarStyleLightContent;
     [self.window makeKeyAndVisible];
+    
+    int shortestTime = 5;
+    int longestTime = 10;
+    int timeInterval = arc4random_uniform(longestTime - shortestTime) + shortestTime;
+    
+    [NSTimer scheduledTimerWithTimeInterval:timeInterval target:self selector:@selector(requestReview) userInfo:nil repeats:NO];
+    
     return YES;
+}
+
+- (void)requestReview {
+    [SKStoreReviewController requestReview];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

@@ -31,6 +31,9 @@
 @property (weak, nonatomic) IBOutlet GADBannerView *bannerView2;
 @property (weak, nonatomic) IBOutlet UIButton *Xbutton;
 @property (weak, nonatomic) IBOutlet UIButton *Xbutton2;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentTab;
+@property (nonatomic, strong) GADInterstitial *interstitial;
+@property (strong, nonatomic) NSTimer *timer;
 
 - (void) playClick;
 - (BOOL) webView:(UIWebView *)view shouldStartLoadWithRequest:(NSURLRequest *)request 
